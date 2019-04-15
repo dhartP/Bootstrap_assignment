@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Grid Example</title>
+   
+    <link rel="stylesheet" type="text/css" href="./Bootstrap/css/bootstrap.min.css"/>
+    <script src="./Bootstrap/js/bootstrap.min.js"></script>
+    <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        [class*="col-md-"] {
+            border:1px solid #ddd;
+            min-height: 500px;
+
+        }
+        .col1 {
+            background: red url('images/apple.jpg') center no-repeat;            
+        }
+        .col2 {
+            background: green url('images/flower.jpg') center no-repeat;
+        }
+        .col3 {
+            background: blue url('images/twitter.jpg') center no-repeat;
+        }
+        .col4 {
+            background: orange url('images/right.jpg') center no-repeat;
+        }
+        .col5 {
+            background: brown url('images/ball.jpg') center no-repeat;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.dropdown-toggle').click(function(){
+                $('.dropdrown-menu').toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12 col1">
+                        Column1
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-md-9">     
+                <div class="row">                       
+                    <div class="col-md-5 col2">
+                        Column2
+                    </div>
+                    <div class="col-md-4 col3">
+                        Column3
+                    </div>
+                    <div class="col-md-1 col4">
+                        Column4
+                    </div>
+                    <div class="col-md-2 col5">
+                        Column5
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                    <a data-toggle="dropdown" class="btn btn-lg btn-success dropdown-toggle">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action 1</a></li>
+                        <li><a href="#">Action 2</a></li>
+                        <li><a href="#">Action 3</a></li>
+                    </ul>
+            </div>
+
+        </div>
+      </div>
+</body>
+</html>
